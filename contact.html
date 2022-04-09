@@ -1,420 +1,184 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bonx - Gaming Website Template HTML Version</title>
-    <meta name="description" content="Bonx is a terrific esports website template with a slick and modern look.  It’s a robust gaming HTML template for bloggers and online gamers who want to share their enthusiasm for games on the internet.">
-    <meta name="keywords" content="	bootstrap, clean, esports, game, game portal, Game website, gamer, games, gaming, magazine, match, modern, online game, sport, sports">
-    <meta name="author" content="Code Carnival">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manny'sBlog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Manny'sBlog
 
-    <!-- CSS 
-    ========================= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="static/css/css2.css" rel="stylesheet">
+https://templatemo.com/tm-553-xtra-blog
 
-    <link rel="stylesheet" href="static/css/bootstrap.min1.css">
-    <link rel="stylesheet" href="static/css/slick.css">
-    <link rel="stylesheet" href="static/css/icofont.min.css">
-    <link rel="stylesheet" href="static/css/animate.css">
-    <link rel="stylesheet" href="static/css/nice-select.css">
-    <link rel="stylesheet" href="static/css/magnific-popup.css">
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="static/css/style1.css">
+-->
 </head>
-
-<body class="body__bg" data-bgimg="assets/img/bg/body-bg2.webp">
-   
-  
-    <!--header area start-->
-    <header class="header_section header_transparent sticky-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="main_header d-flex justify-content-between align-items-center">
-                        <div class="header_logo">
-                            <a class="sticky_none" href="index1.html"><img aria-label="logo" width="215" height="79" src="static/picture/logo-white.jpg" alt=""></a>
-                        </div>
-                        <!--main menu start-->
-                        <div class="main_menu d-none d-lg-block"> 
-                            <nav>  
-                                <ul class="d-flex">
-                                    <li><a href="index1.html">Home</a></li> 
-                                    <li><a href="match.html">Match</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="match.html">Match Page</a></li>
-                                            <li><a href="match-details.html">Match Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="all-game.html">All Game</a></li>
-                                            <li><a href="game-details.html">Game Details</a></li>
-                                            <li><a href="faq.html">Faq Page</a></li>
-                                            <li><a href="players.html">Players</a></li>
-                                            <li><a href="player-details.html">Player Details</a></li>
-                                            <li><a href="404.html">Error 404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog-left-sidebar.html">blog</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li><a href="blog-without-sidebar.html">Blog Without Sidebar</a></li>
-                                             <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                            <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                                            <li><a href="blog-grid-without-sidebar.html">Blog Grid Without Sidebar</a></li>
-                                            <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Contact</a></li>
-                                </ul>  
-                            </nav>
-                        </div>
-                        <!--main menu end-->
-                        <div class="header_right_sidebar d-flex align-items-center">
-                            <div class="sing_up_btn">
-                                <a class="btn btn-link" href="#">SIGN UP <img width="15" height="15" src="static/picture/arrrow-icon2.jpg" alt=""> </a>
-                            </div>
-                            <div class="canvas_open">
-                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"><i class="icofont-navigation-menu"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Manny'sBlog</h1>
             </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Xtra
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Manny's Blog是给我专门写blog的地方  
+            </p>
         </div>
     </header>
-    <!--header area end-->
-
-    <!--offcanvas menu area start-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
-        <div class="offcanvas-header justify-content-end">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="offcanvas_main_menu">
-                <li class="menu-item-has-children active">
-                    <a href="index1.html">Home</a>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Match</a>
-                    <ul class="sub-menu">
-                        <li><a href="match.html">Match Page</a></li>
-                        <li><a href="match-details.html">Match Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="all-game.html">All Game</a></li>
-                        <li><a href="game-details.html">Game Details</a></li>
-                        <li><a href="faq.html">Faq Page</a></li>
-                        <li><a href="players.html">Players</a></li>
-                        <li><a href="player-details.html">Player Details</a></li>
-                        <li><a href="404.html">Error 404</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                        <li><a href="blog-without-sidebar.html">Blog Without Sidebar</a></li>
-                            <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                            <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                        <li><a href="blog-grid-without-sidebar.html">Blog Grid Without Sidebar</a></li>
-                        <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--offcanvas menu area end-->
-
-    <!-- breadcrumbs area start -->
-    <div class="breadcrumbs_aree breadcrumbs_bg mb-140" data-bgimg="assets/img/bg/breadcrumbs-bg.webp">
-        <div class="container">
-            <div class="row">
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
                 <div class="col-12">
-                    <div class="breadcrumbs_text text-center">
-                        <h1>Contact us</h1>
-                        <ul class="d-flex justify-content-center">
-                            <li><a href="index1.html">Home </a></li>
-                            <li> <span>//</span></li>
-                            <li>  PAGES</li>
-                        </ul>
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <div class="gmap_canvas"> <!-- Google Map -->
+                        <iframe width="100%" height="477" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
-                </div>
+                </div>                
             </div>
-        </div>
+            <div class="row tm-row tm-mb-120">
+                <div class="col-12">
+                    <h2 class="tm-color-primary tm-post-title tm-mb-60">Contact Us</h2>
+                </div>
+                <div class="col-lg-7 tm-contact-left">
+                    <form method="POST" action="" class="mb-5 ml-auto mr-0 tm-contact-form">                        
+                        <div class="form-group row mb-4">
+                            <label for="name" class="col-sm-3 col-form-label text-right tm-color-primary">Name</label>
+                            <div class="col-sm-9">
+                                <input class="form-control mr-0 ml-auto" name="name" id="name" type="text" required>                            
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <label for="email" class="col-sm-3 col-form-label text-right tm-color-primary">Email</label>
+                            <div class="col-sm-9">
+                                <input class="form-control mr-0 ml-auto" name="email" id="email" type="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <label for="subject" class="col-sm-3 col-form-label text-right tm-color-primary">Subject</label>
+                            <div class="col-sm-9">
+                                <input class="form-control mr-0 ml-auto" name="subject" id="subject" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-5">
+                            <label for="message" class="col-sm-3 col-form-label text-right tm-color-primary">Message</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control mr-0 ml-auto" name="message" id="message" rows="8" required></textarea>                                
+                            </div>
+                        </div>
+                        <div class="form-group row text-right">
+                            <div class="col-12">
+                                <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>                        
+                            </div>                            
+                        </div>                                
+                    </form>
+                </div>
+                <div class="col-lg-5 tm-contact-right">
+                    <address class="mb-4 tm-color-gray">
+                        120 Lorem ipsum dolor sit amet,
+                        consectetur adipiscing 10550
+                    </address>
+                    <span class="d-block">
+                        Tel:
+                        <a href="tel:060-070-0980" class="tm-color-gray">060-070-0980</a>
+                    </span>
+                    <span class="mb-4 d-block">
+                        Email:
+                        <a href="mailto:info@company.com" class="tm-color-gray">info@company.com</a>
+                    </span>
+                    <p class="mb-5 tm-line-height-short">
+                        Maecenas eu mi eu dui cursus
+                        consequat non eu metus. Morbi ac
+                        turpis eleifend, commodo purus
+                        eget, commodo mauris.
+                    </p>
+                    <ul class="tm-social-links">
+                        <li class="mb-2">
+                            <a href="https://facebook.com" class="d-flex align-items-center justify-content-center">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://twitter.com" class="d-flex align-items-center justify-content-center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://youtube.com" class="d-flex align-items-center justify-content-center">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://instagram.com" class="d-flex align-items-center justify-content-center mr-0">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>      
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Manny'sBlog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
     </div>
-    <!-- breadcrumbs area end -->
-    <!-- page wrapper start -->
-    <div class="page_wrapper">
-    
-        <!-- contact section start -->
-        <section class="contact_page_section mb-140">
-            <div class="container">
-                <div class="contact_info_area">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="contact_info_list left wow fadeInUp" data-bgimg="assets/img/others/gaming-world-bg1.webp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                                <div class="contact_info_thumb">
-                                    <img width="115" height="115" src="static/picture/email.jpg" alt="">
-                                </div>
-                                <div class="contact_info_text">
-                                    <h3>Email:</h3>
-                                    <p>
-                                        <a href="mailto:gamestudio@gmail.com">gamestudio@gmail.com</a>  <br>
-                                        <a href="mailto:support24@gmail.com">support24@gmail.com</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="contact_info_list center wow fadeInUp" data-bgimg="assets/img/others/gaming-world-bg2.webp" data-wow-delay="0.2s" data-wow-duration="1.2s">
-                                <div class="contact_info_thumb">
-                                    <img width="115" height="115" src="static/picture/location.jpg" alt="">
-                                </div>
-                                <div class="contact_info_text">
-                                    <h3>Location:</h3>
-                                    <p>100 N Aurora Ave #APT 19
-                                        Oakland, Nebraska(NE), 68045</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="contact_info_list right wow fadeInUp" data-bgimg="assets/img/others/gaming-world-bg3.webp" data-wow-delay="0.3s" data-wow-duration="1.3s">
-                                <div class="contact_info_thumb">
-                                    <img width="115" height="115" src="static/picture/phone.jpg" alt="">
-                                </div>
-                                <div class="contact_info_text">
-                                    <h3>Phone:</h3>
-                                    <p> 
-                                        <a href="tel:(402)685-5964"> (402) 685-5964</a>
-                                        <a href="tel:+88(00)4568457437"> +88 (00) 4568 457 437</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="contact_form_area">
-                    <div class="section_title text-center mb-60">
-                        <h2>GET IN TOUCH</h2>
-                        <p>When unknown printer took type and scrambled it to make <br>
-                            type specimen book centuries,</p>
-                    </div>
-                    <div class="contact_form_inner">
-                        <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form_input">
-                                        <input name="con_name" placeholder="Name" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_input">
-                                        <input name="con_email" placeholder="E-Mail" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_input">
-                                        <input name="con_phone" placeholder="Phone" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_input">
-                                        <input name="con_address" placeholder="Address" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form_textarea">
-                                <textarea name="con_message" placeholder="Write a review from here"></textarea>
-                            </div>
-                            <div class="form_input_btn text-center">
-                                <button type="submit" class="btn btn-link">SUBMIT NOW <img width="20" height="20" src="static/picture/arrrow-icon.jpg" alt=""></button>
-                            </div>
-                            <p class="form-message"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact section end -->
-
-        <!--contact map start-->
-        <div class="contact_map mt-70">
-            <iframe src="javascript:;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <!--contact map end-->
-
-        <!-- gaming update section start -->
-        <section class="gaming_update_section contact_gaming_update">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="gaming_update_inner d-flex justify-content-between align-items-center" data-bgimg="assets/img/bg/gaming-update.webp">
-                            <div class="gaming_update_text">
-                                <h2>Connect with us <br>
-                                    for gamING update.</h2>
-                            </div>
-                            <div class="gaming_update_btn">
-                                <a class="btn btn-link" href="#">CONNECT NOW <img width="20" height="20" src="static/picture/arrrow-icon.jpg" alt=""> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- gaming update section end -->
-
-    </div>
-    <!-- page wrapper end -->
-
-    <!--footer area start-->
-    <footer class="footer_widgets">
-        <div class="main_footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="main_footer_inner d-flex">
-                            <div class="footer_widget_list">
-                                <div class="footer_logo">
-                                    <a href="#"><img aria-label="logo" width="215" height="79" src="static/picture/logo-white.jpg" alt=""></a>
-                                </div>
-                                <div class="footer_contact_desc">
-                                    <p>It long estabhed fact that reader
-                                        will ditracted the readable content
-                                        looking using readable.</p>
-                                </div>
-                                <div class="footer_social">
-                                    <ul class="d-flex">
-                                        <li><a aria-label="facebook" class="facebook" href="javascript:;"><i class="icofont-facebook"></i></a></li>
-                                        <li><a aria-label="dribble" class="dribbble" href="javascript:;"><i class="icofont-dribbble"></i></a></li>
-                                        <li><a aria-label="youtube" class="youtube" href="javascript:;"><i class="icofont-youtube-play"></i></a></li>
-                                        <li><a aria-label="twitter" class="twitter" href="javascript:;"><i class="icofont-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list contact">
-                                <h3>Contact</h3>
-                                <div class="footer_contact_info">
-                                    <div class="footer_contact_info_list">
-                                        <span>Location:</span>
-                                        <p>136 Harding Ave
-                                            Wheeling, West Virginia</p>
-                                    </div>
-                                    <div class="footer_contact_info_list">
-                                        <span>Phone:</span>
-                                        <p><a href="#">00 (62) 632 867 4497</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list">
-                                <h3>today’s winners</h3>
-                                <div class="footer_winners_gallery">
-                                    <div class="footer_winners_list d-flex">
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners1.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners3.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="footer_winners_list d-flex">
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners4.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners5.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners6.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list footer_list_menu">
-                                <h3>Content</h3>
-                                <div class="footer_menu">
-                                    <ul>
-                                        <li><a href="about.html"> Copywriting</a></li>
-                                        <li><a href="about.html">Social Media</a></li>
-                                        <li><a href="about.html">Interactive Media</a></li>
-                                        <li><a href="about.html">Motion Design</a></li>
-                                        <li><a href="about.html">Illustration</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="footer_bottom_inner d-flex justify-content-between">
-                            <div class="copyright_right">
-                                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-                            </div>
-                            <div class="footer_bottom_link_menu">
-                                <ul class="d-flex">
-                                    <li><a href="about.html">Terms & Condition  </a></li>
-                                    <li><a href="about.html">Privacy Policy  </a></li>
-                                </ul>
-                            </div>
-
-                            <div class="scroll__top_icon">
-                                <a id="scroll-top" href="#"><img aria-label="scroll-top" width="46" height="40" src="static/picture/scroll-top.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer area end-->
-   
-<!-- JS
-============================================ -->
-<!--modernizr min js here-->
-<script src="static/js/modernizr-3.7.1.min.js"></script>
-
-<!-- Vendor JS -->
-<script src="static/js/jquery-3.6.0.min.js"></script>
-<script src="static/js/jquery-migrate-3.3.2.min.js"></script>
-<script src="static/js/popper.js"></script>
-<script src="static/js/bootstrap.min1.js"></script>
-<script src="static/js/slick.min.js"></script>
-<script src="static/js/wow.min.js"></script>
-<script src="static/js/jquery.nice-select.js"></script>
-<script src="static/js/jquery.magnific-popup.min.js"></script>
-<script src="static/js/jquery.counterup.min.js"></script>
-<script src="static/js/jquery-waypoints.js"></script>
-<script src="static/js/ajax-mail1.js"></script>
-
-<!-- Main JS -->
-<script src="static/js/main1.js"></script>
-
-
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
-
 </html>

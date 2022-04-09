@@ -1,551 +1,211 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bonx - Gaming Website Template HTML Version</title>
-    <meta name="description" content="Bonx is a terrific esports website template with a slick and modern look.  It’s a robust gaming HTML template for bloggers and online gamers who want to share their enthusiasm for games on the internet.">
-    <meta name="keywords" content="	bootstrap, clean, esports, game, game portal, Game website, gamer, games, gaming, magazine, match, modern, online game, sport, sports">
-    <meta name="author" content="Code Carnival">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manny'sBlog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Manny'sBlog
 
-    <!-- CSS 
-    ========================= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="static/css/css2.css" rel="stylesheet">
+https://templatemo.com/tm-553-xtra-blog
 
-    <link rel="stylesheet" href="static/css/bootstrap.min1.css">
-    <link rel="stylesheet" href="static/css/slick.css">
-    <link rel="stylesheet" href="static/css/icofont.min.css">
-    <link rel="stylesheet" href="static/css/animate.css">
-    <link rel="stylesheet" href="static/css/nice-select.css">
-    <link rel="stylesheet" href="static/css/magnific-popup.css">
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="static/css/style1.css">
+-->
 </head>
-
-<body class="body__bg" data-bgimg="assets/img/bg/body-bg2.webp">
-   
-  
-    <!--header area start-->
-    <header class="header_section header_transparent sticky-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="main_header d-flex justify-content-between align-items-center">
-                        <div class="header_logo">
-                            <a class="sticky_none" href="index1.html"><img aria-label="logo" width="215" height="79" src="static/picture/logo-white.jpg" alt=""></a>
-                        </div>
-                        <!--main menu start-->
-                        <div class="main_menu d-none d-lg-block"> 
-                            <nav>  
-                                <ul class="d-flex">
-                                    <li><a href="index1.html">Home</a></li> 
-                                    <li><a href="match.html">Match</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="match.html">Match Page</a></li>
-                                            <li><a href="match-details.html">Match Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="">About Us</a></li>
-                                            <li><a href="all-game.html">All Game</a></li>
-                                            <li><a href="game-details.html">Game Details</a></li>
-                                            <li><a href="faq.html">Faq Page</a></li>
-                                            <li><a href="players.html">Players</a></li>
-                                            <li><a href="player-details.html">Player Details</a></li>
-                                            <li><a href="404.html">Error 404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog-left-sidebar.html">blog</a>
-                                        <ul class="sub_menu">
-                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li><a href="blog-without-sidebar.html">Blog Without Sidebar</a></li>
-                                             <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                            <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                                            <li><a href="blog-grid-without-sidebar.html">Blog Grid Without Sidebar</a></li>
-                                            <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>  
-                            </nav>
-                        </div>
-                        <!--main menu end-->
-                        <div class="header_right_sidebar d-flex align-items-center">
-                            <div class="sing_up_btn">
-                                <a class="btn btn-link" href="#">SIGN UP <img width="15" height="15" src="static/picture/arrrow-icon2.jpg" alt=""> </a>
-                            </div>
-                            <div class="canvas_open">
-                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"><i class="icofont-navigation-menu"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Manny'sBlog</h1>
             </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Xtra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Manny'sBlog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+            </p>
         </div>
     </header>
-    <!--header area end-->
-
-    <!--offcanvas menu area start-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
-        <div class="offcanvas-header justify-content-end">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="offcanvas_main_menu">
-                <li class="menu-item-has-children active">
-                    <a href="index1.html">Home</a>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Match</a>
-                    <ul class="sub-menu">
-                        <li><a href="match.html">Match Page</a></li>
-                        <li><a href="match-details.html">Match Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="all-game.html">All Game</a></li>
-                        <li><a href="game-details.html">Game Details</a></li>
-                        <li><a href="faq.html">Faq Page</a></li>
-                        <li><a href="players.html">Players</a></li>
-                        <li><a href="player-details.html">Player Details</a></li>
-                        <li><a href="404.html">Error 404</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                        <li><a href="blog-without-sidebar.html">Blog Without Sidebar</a></li>
-                            <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                            <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                        <li><a href="blog-grid-without-sidebar.html">Blog Grid Without Sidebar</a></li>
-                        <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--offcanvas menu area end-->
-
-    <!-- breadcrumbs area start -->
-    <div class="breadcrumbs_aree breadcrumbs_bg mb-140" data-bgimg="assets/img/bg/breadcrumbs-bg.webp">
-        <div class="container">
-            <div class="row">
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
                 <div class="col-12">
-                    <div class="breadcrumbs_text text-center">
-                        <h1>about us</h1>
-                        <ul class="d-flex justify-content-center">
-                            <li><a href="index1.html">Home </a></li>
-                            <li> <span>//</span></li>
-                            <li>  about us</li>
-                        </ul>
-                    </div>
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <img src="img/about-01.jpg" alt="Image" class="img-fluid">
                 </div>
             </div>
-        </div>
+            <div class="row tm-row tm-mb-40">
+                <div class="col-12">                    
+                    <div class="mb-4">
+                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About Manny</h2>
+                        <p>
+                            You can immediately download 
+                                <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Manny'sBlog Template</a> 
+                                from TemplateMo website for 100% free of charge. Etiam vehicula, tortor ac eleifend tincidunt, diam neque pellentesque ipsum, 
+                                a geugiat eros mauris eget lorem. Quisque in
+                            bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. Aliquam lorem mi, maximus at iaculis ut, viverra vel
+                            mauris. Duis congue luctus metus, sodales tincidunt lectus fringilla ut. Nunc tempus at magna sed vestibulum.
+                        </p>
+                        <p>
+                            我是中山大学的一名学生，修读智能科学与技术专业
+                        </p>                            
+                    </div>                    
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-120">
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Background</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            SYSU
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Teamwork</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            NOT YET
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Our Core Value</h2>
+                        <p class="mb-0 tm-line-height-short">
+                        好好学习，好好生活    
+                        </p>
+                    </div>
+                </div>
+            </div>            
+            <div class="row tm-row tm-mb-60">
+                <div class="col-12">
+                    <hr class="tm-hr-primary  tm-mb-55">
+                </div>                
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-02.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">John Henry</h2>
+                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
+                                hendrerit, vestibulum mi id, mattis tortor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-03.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Timy Cake</h2>
+                            <h3 class="tm-h3 mb-3">Project Director</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. 
+                                Aliquam lorem mi, maximus at iaculis ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-04.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Jay Zoona</h2>
+                            <h3 class="tm-h3 mb-3">Supervisor</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac
+                                turpis eleifend, commodo purus eget, commodo mauris.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-05.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Catherine Soft</h2>
+                            <h3 class="tm-h3 mb-3">Team Leader</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Integer eu sapien hendrerit,
+                                imperdiet arcu sit amet, sollicitudin ipsum.
+                                Phasellus consequat suscipit ligula eget bibendum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Manny'sBlog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
     </div>
-    <!-- breadcrumbs area end -->
-
-    <!-- page wrapper start -->
-    <div class="page_wrapper">
-
-        <!-- about section start -->
-        <section class="about_section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about_thumb wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                            <img width="550" height="550" src="static/picture/about-thumb.jpg" alt="">
-                            <div class="about_video_btn">
-                                <a class="video_popup" href="javascript:;">
-                                    <i class="icofont-ui-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about_sidebar wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
-                            <div class="about_title">
-                                <h5>ABOUT BONX STUDIO</h5>
-                                <h2>bonx is the best gaming studio for all gamer.</h2>
-                            </div>
-                            <div class="about_desc">
-                                <p>It is a long established fact that a reader will be distracted the readable
-                                content of page when looking at it layout the point using lorem Ipsum is that
-                                it has a more-or-less normal distribution.</p>
-                                <p>It is a long established fact that a reader will be distracted the readable
-                                content of page when looking at it layout the point using lorem Ipsum is that
-                                it has a more-or-less normal distribution.</p>
-                            </div>
-                            <div class="about_btn">
-                                <a class="btn btn-link wow" href="all-game.html">Play Now <img width="20" height="20" src="static/picture/arrrow-icon.jpg" alt=""> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about section end -->
-
-        <!-- counterup section start -->
-        <section class="counterup_section wow fadeInUp  mb-130" data-wow-delay="0.1s" data-wow-duration="1.1s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="counterup_inner d-flex justify-content-center">
-                            <div class="single_counterup one">
-                                <div class="counterup_text">
-                                    <h2 class="counterup color1">8697</h2>
-                                    <span>TWITCH STREAMS</span>
-                                </div>
-                            </div>
-                            <div class="single_counterup two">
-                                <div class="counterup_text">
-                                    <h2 class="counterup color2">428</h2>
-                                    <span>TOTAL GAMES</span>
-                                </div>
-                            </div>
-                            <div class="single_counterup three">
-                                <div class="counterup_text">
-                                    <h2 class="counterup color3">5367</h2>
-                                    <span>YOUTUBE STREAMS</span>
-                                </div>
-                            </div>
-                            <div class="single_counterup four">
-                                <div class="counterup_text">
-                                    <h2 class="counterup color4">249</h2>
-                                    <span>PRO TEAM</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- counterup section end -->
-
-        <!-- gaming video section start -->
-        <section class="gaming_video_section wow fadeInUp mb-118" data-wow-delay="0.1s" data-wow-duration="1.1s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="gaming_video_inner slick_navigation slick__activation" data-slick='{
-                            "slidesToShow": 1,
-                            "slidesToScroll": 1,
-                            "arrows": true,
-                            "dots": false,
-                            "autoplay": false,
-                            "speed": 300,
-                            "infinite": true ,  
-                            "responsive":[ 
-                            {"breakpoint":500, "settings": { "slidesToShow": 1 } }  
-                            ]                                                     
-                        }'>
-                            <div class="gaming_video_thumb">
-                                <img width="1170" height="540" src="static/picture/gaming-bg1.jpg" alt="">
-                                <div class="gaming_video_paly_icon">
-                                    <a class="video_popup" href="javascript:;"><img width="134" height="140" src="static/picture/play-btn.jpg" alt=""></a>
-                                </div>
-                                <div class="live_streaming_text">
-                                    <h3>Watch Live Streaming</h3>
-                                </div>
-                            </div>
-                            <div class="gaming_video_thumb">
-                                <img width="1170" height="540" src="static/picture/gaming-bg1.jpg" alt="">
-                                <div class="gaming_video_paly_icon">
-                                    <a class="video_popup" href="javascript:;"><img width="134" height="140" src="static/picture/play-btn.jpg" alt=""></a>
-                                </div>
-                                <div class="live_streaming_text">
-                                    <h3>Watch Live Streaming</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- gaming video section end -->
-
-        <!-- gamer team section start -->
-        <section class="gamer_team_section mb-140">
-            <div class="container">
-                <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                    <h2>MEET GAMER TEAM</h2>
-                    <p>When unknown printer took type and scrambled it to make <br>
-                        type specimen book centuries,</p>
-                </div>
-                <div class="gamer_team_inner">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="gamer_single_team wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                                <div class="gamer_team_thumb">
-                                    <a href="#"><img width="357" height="424" src="static/picture/team1.jpg" alt=""></a>
-                                    <div class="gamer_team_text">
-                                        <h3><a href="#">Tasia Mancuso</a></h3>
-                                        <span>CEO & Founder</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="gamer_single_team wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
-                                <div class="gamer_team_thumb">
-                                    <a href="#"><img width="357" height="424" src="static/picture/team2.jpg" alt=""></a>
-                                    <div class="gamer_team_text">
-                                        <h3><a href="#">Rosaline Emmons</a></h3>
-                                        <span>Team Leader</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="gamer_single_team wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
-                                <div class="gamer_team_thumb">
-                                    <a href="#"><img width="357" height="424" src="static/picture/team3.jpg" alt=""></a>
-                                    <div class="gamer_team_text">
-                                        <h3><a href="#">Wilburn Behrens</a></h3>
-                                        <span>Team Member</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="join_our_team_btn text-center">
-                    <a class="btn btn-link" href="#">Join Our Team</a>
-                </div>
-            </div>
-        </section>
-        <!-- gamer team section end -->
-
-         <!-- testimonial section start -->
-         <section class="testimonial_section wow fadeInUp" data-bgimg="assets/img/others/testimonial-bg-fullwidth.webp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section_title mb-60">
-                            <h2>What people’s say <br>
-                                ABOUT <span>game studio.</span></h2>
-                        </div>
-                        <div class="testimonial_inner slick__activation slick_navigation" data-slick='{
-                            "slidesToShow": 1,
-                            "slidesToScroll": 1,
-                            "arrows": true,
-                            "dots": false,
-                            "autoplay": false,
-                            "speed": 300,
-                            "infinite": true ,  
-                            "responsive":[  
-                            {"breakpoint":576, "settings": { "slidesToShow": 1 } }  
-                            ]                                                     
-                        }' data-bgimg="assets/img/others/testimonial-bg.webp">
-                            <div class="testimonial_list d-flex align-items-center">
-                                <div class="testimonial_thumb">
-                                    <img width="270" height="319" src="static/picture/testimonial-thumb.jpg" alt="">
-                                </div>
-                                <div class="testimonial_content">
-                                    <div class="testimonial_desc">
-                                        <p>It is a long established fact that a reader will be distracted the
-                                        readable content of page when looking at it layout the point using
-                                        lorem Ipsum is that it has a more-or-less normal distribution lette
-                                        as opposed to using making it look like readable english,
-                                        many desktop publishing packages and web page now editors.</p>
-                                    </div>
-                                    <div class="testimonial_author">
-                                        <h3>Randolph Frazier</h3>
-                                        <span>Top Rated Gamer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial_list d-flex align-items-center">
-                                <div class="testimonial_thumb">
-                                    <img width="270" height="319" src="static/picture/testimonial-thumb.jpg" alt="">
-                                </div>
-                                <div class="testimonial_content">
-                                    <div class="testimonial_desc">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus quos consectetur amet blanditiis, facilis esse illo unde saepe facere dolore porro asperiores ducimus, inventore voluptate doloribus odio fugit magnam voluptatum perferendis? Sit quisquam labore adipisci doloremque! Aperiam voluptate modi quasi are nobis.</p>
-                                    </div>
-                                    <div class="testimonial_author">
-                                        <h3>Roar Spring</h3>
-                                        <span>Top Rated Gamer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- testimonial section end -->
-
-        <!-- gaming update section start -->
-        <section class="gaming_update_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="gaming_update_inner d-flex justify-content-between align-items-center" data-bgimg="assets/img/bg/gaming-update.webp">
-                            <div class="gaming_update_text">
-                                <h2>Connect with us <br>
-                                    for gamING update.</h2>
-                            </div>
-                            <div class="gaming_update_btn">
-                                <a class="btn btn-link" href="#">CONNECT NOW <img width="20" height="20" src="static/picture/arrrow-icon.jpg" alt=""> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- gaming update section end -->
-
-    </div>
-    <!-- page wrapper end -->
-
-    <!--footer area start-->
-    <footer class="footer_widgets">
-        <div class="main_footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="main_footer_inner d-flex">
-                            <div class="footer_widget_list">
-                                <div class="footer_logo">
-                                    <a href="#"><img aria-label="logo" width="215" height="79" src="static/picture/logo-white.jpg" alt=""></a>
-                                </div>
-                                <div class="footer_contact_desc">
-                                    <p>It long estabhed fact that reader
-                                        will ditracted the readable content
-                                        looking using readable.</p>
-                                </div>
-                                <div class="footer_social">
-                                    <ul class="d-flex">
-                                        <li><a aria-label="facebook" class="facebook" href="javascript:;"><i class="icofont-facebook"></i></a></li>
-                                        <li><a aria-label="dribble" class="dribbble" href="javascript:;"><i class="icofont-dribbble"></i></a></li>
-                                        <li><a aria-label="youtube" class="youtube" href="javascript:;"><i class="icofont-youtube-play"></i></a></li>
-                                        <li><a aria-label="twitter" class="twitter" href="javascript:;"><i class="icofont-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list contact">
-                                <h3>Contact</h3>
-                                <div class="footer_contact_info">
-                                    <div class="footer_contact_info_list">
-                                        <span>Location:</span>
-                                        <p>136 Harding Ave
-                                            Wheeling, West Virginia</p>
-                                    </div>
-                                    <div class="footer_contact_info_list">
-                                        <span>Phone:</span>
-                                        <p><a href="#">00 (62) 632 867 4497</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list">
-                                <h3>today’s winners</h3>
-                                <div class="footer_winners_gallery">
-                                    <div class="footer_winners_list d-flex">
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners1.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners3.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="footer_winners_list d-flex">
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners4.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners5.jpg" alt=""></a>
-                                        </div>
-                                        <div class="footer_winners_thumb">
-                                            <a href="game-details.html"><img aria-label="game-team" width="75" height="75" src="static/picture/winners6.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list footer_list_menu">
-                                <h3>Content</h3>
-                                <div class="footer_menu">
-                                    <ul>
-                                        <li><a href=""> Copywriting</a></li>
-                                        <li><a href="">Social Media</a></li>
-                                        <li><a href="">Interactive Media</a></li>
-                                        <li><a href="">Motion Design</a></li>
-                                        <li><a href="">Illustration</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="footer_bottom_inner d-flex justify-content-between">
-                            <div class="copyright_right">
-                                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-                            </div>
-                            <div class="footer_bottom_link_menu">
-                                <ul class="d-flex">
-                                    <li><a href="">Terms & Condition  </a></li>
-                                    <li><a href="">Privacy Policy  </a></li>
-                                </ul>
-                            </div>
-
-                            <div class="scroll__top_icon">
-                                <a id="scroll-top" href="#"><img aria-label="scroll-top" width="46" height="40" src="static/picture/scroll-top.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer area end-->
-
-   
-<!-- JS
-============================================ -->
-<!--modernizr min js here-->
-<script src="static/js/modernizr-3.7.1.min.js"></script>
-
-<!-- Vendor JS -->
-<script src="static/js/jquery-3.6.0.min.js"></script>
-<script src="static/js/jquery-migrate-3.3.2.min.js"></script>
-<script src="static/js/popper.js"></script>
-<script src="static/js/bootstrap.min1.js"></script>
-<script src="static/js/slick.min.js"></script>
-<script src="static/js/wow.min.js"></script>
-<script src="static/js/jquery.nice-select.js"></script>
-<script src="static/js/jquery.magnific-popup.min.js"></script>
-<script src="static/js/jquery.counterup.min.js"></script>
-<script src="static/js/jquery-waypoints.js"></script>
-
-<!-- Main JS -->
-<script src="static/js/main1.js"></script>
-
-
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
-
 </html>

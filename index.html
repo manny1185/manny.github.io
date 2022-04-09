@@ -1,348 +1,255 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bonx - Gaming Website Template HTML Version</title>
-    <meta name="description" content="Bonx is a Bootstrap5 Template exclusively built for Gaming Website Template">
-    <meta name="keywords" content="Online Gaming HTML Template, Gaming Magazine Template, Gaming Bootstrap 5 Template, Gaming Template based on Bootstrap, Gaming Bootstrap 5 HTML Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- All CSS Files -->
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <!-- Icon Font -->
-    <link rel="stylesheet" href="static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/et-line.css">
-    <!-- Plugins css file -->
-    <link rel="stylesheet" href="static/css/plugins.css">
-    <!-- Theme main style -->
-    <link rel="stylesheet" href="static/css/style.css">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="static/css/responsive.css">
-    <!-- Modernizr JS -->
-    <script src="static/js/modernizr-2.8.3.min.js"></script>
-	
-	
-	
-	
-	<style type="text/css">
-		.buy-btn.top-btn {
-		  background-color: #b154f0  ;
-		  border-color: #b154f0;
-		}
-		.buy-btn:hover {
-		  background-color: #b154f0  ;
-		  border-color: #b154f0  ;
-		}
-		.demo-item .image::after {
-			background-color: #b154f0  ;
-		}
-		.demo-item .image i:hover {
-			color: #b154f0  ;
-		}
-		.stick .buy-btn.top-btn {
-		  border: 2px solid #b154f0  ;
-		  color: #fff;
-		}
-		.stick .buy-btn {
-		  border: 2px solid #b154f0  ;
-		  color: #b154f0  ;
-		}
-		.single-feature .icon {
-			color: #b154f0  ;
-		}
-		.footer-section {
-		 background-color: #444;
-		}
-		.stick .buy-btn:hover {
-			color: #fff;
-		}
-		.demo-item .title a:hover {
-			color: #b154f0  ;
-		}
-		.footer-section .buy-btn:hover {
-			color: #b154f0  ;
-		}
-		.footer-section .buy-btn.bottom-btn {
-			color: #fff;
-            background-color: #b154f0  ;
-            border: 2px solid #b154f0  ;
-		}
-        .hero-content h1 strong{
-            text-transform: capitalize;
-        }
-        .stick .non-sticky {
-          display: none;
-        }
-        .demo-item {
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-        }
-        .demo-item .title {
-          padding: 20px 0;
-            margin: 0;
-        }
-        .float-right a{
-            display: inline-block;
-        }
-        .hader-inner{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        .stick .hader-inner {
-            padding: 0;
-        }
-	</style>
-
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manny's Blog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
     
-	
-	
+TemplateMo 553 Manny's Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
 </head>
-
 <body>
-
-<!-- Start Header Section -->
-<div class="header-section section sticker">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="hader-inner d-flex justify-content-between">
-                    <!-- Logo -->
-                    <div class="logo">
-                        <a class="non-sticky" href=""><img src="static/picture/logo-white.jpg" alt="logo-image"></a>
-                        <a class="sticky-logo" href=""><img src="static/picture/logo-white.jpg" alt=""></a>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Manny's Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Manny
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact me
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Manny's Blog是给我专门写blog的地方，关于Manny是谁，请点击了解详情 
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">最近的/最值得展示的Post</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        在这里记录着最近的Post或者我认为最想展示的Post
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Travel . Events</span>
+                        <span class="tm-color-primary">June 24, 2020</span>
                     </div>
-                    <!-- Logo -->
-                    <div class="header-right-link">
-                        <a class="buy-btn top-btn" target="_blank" href="#">开始学习</a>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>36 comments</span>
+                        <span>by Admin Nat</span>
                     </div>
-                </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class=" tm-post-link-inner">
+                            <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Manny是谁？这个网站用来做什么？</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Manny's Blog</a> 是给我专门写blog的地方，关于Manny是谁，请点击了解详情.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">学习 . 吃喝玩乐 . 美景</span>
+                        <span class="tm-color-primary">4月 9日, 2022</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>48 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-03.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">How can you apply Xtra Blog</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        You are <u>allowed</u> to convert this template as any kind of CMS theme or template for your custom website builder. 
+                        You can also use this for your clients. Thank you for choosing us.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Music . Audio</span>
+                        <span class="tm-color-primary">June 11, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>24 comments</span>
+                        <span>by John Walker</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-04.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">A little restriction to apply</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        You are <u>not allowed</u> to re-distribute this template as a downloadable ZIP file on any template collection
+                        website. This is strongly prohibited as we worked hard for this template. Please contact TemplateMo for more information.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Artworks . Design</span>
+                        <span class="tm-color-primary">June 4, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>72 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-05.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Color hexa values of Xtra Blog</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        If you wish to kindly support us, please contact us or contribute a small PayPal amount to info [at] templatemo.com that is helpful for us.
+                        <br>
+                        Title #099 New #0CC <br>
+                        <span class="tm-color-primary">Text #999 Line #CCC Next #0CC Prev #F0F0F0</span>
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Creative . Video . Audio</span>
+                        <span class="tm-color-primary">May 31, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>84 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-06.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Donec convallis varius risus</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc vel turpis eget orci elementum cursus vitae in eros. Quisque vulputate nulla ut dolor consectetur luctus.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Visual . Artworks</span>
+                        <span class="tm-color-primary">June 16, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>96 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
             </div>
-        </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
     </div>
-</div>
-<!-- Header Section End -->
-
-<!-- Start Hero Section -->
-<div class="hero-section section overlay" style="background-image: url('static/image/preview.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="hero-content text-center col-xs-12">
-                <h1><strong>Manny-Yin</strong> 欢迎来到我的网站</h1>
-                <p>现在还不知道这个网站用来做什么</p>
-                <a class="buy-btn" href="#demo">随我一起探索我的世界吧</a>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<!-- Hero Section End -->
-
-<!-- Start Demo Section -->
-<div id="demo" class="demo-section section pt-120 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="section-style">
-                <div class="section-title col-xs-12 mb-70">
-                    <h1> -----------我的生活，我的热爱-----------</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="index1.html" class="image"><img src="static/picture/home.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="index1.html">学习</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="about.html" class="image"><img src="static/picture/about.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="about.html">吃喝</a></h4>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="match.html" class="image"><img src="static/picture/match-page.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="match.html">玩乐</a></h4>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="match-details.html" class="image"><img src="static/picture/match-details.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="match-details.html">美景</a></h4>
-                </div>
-            </div>
-            
-            <!-- <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="all-game.html" class="image"><img src="static/picture/all-game-page.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="all-game.html">All Game</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="game-details.html" class="image"><img src="static/picture/game-details.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="game-details.html">Game Details</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="players.html" class="image"><img src="static/picture/players.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="players.html">Players</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="player-details.html" class="image"><img src="static/picture/player-details.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="player-details.html">Players Details</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="blog-left-sidebar.html" class="image"><img src="static/picture/blog-left-sidebar.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="blog-left-sidebar.html">Blog Left Sidebar</a></h4>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="blog-details.html" class="image"><img src="static/picture/blog-details.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="blog-details.html">Blog Details</a></h4>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="contact.html" class="image"><img src="static/picture/contact.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="contact.html">Contact Us</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="faq.html" class="image"><img src="static/picture/faq-page.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="faq.html">Faq Page</a></h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mb-50">
-                <div class="demo-item">
-                    <a href="404.html" class="image"><img src="static/picture/error-404.jpg" alt=""><i class="fa fa-long-arrow-right"></i></a>
-                    <h4 class="title"><a href="404.html">Error 404</a></h4>
-                </div>
-            </div> -->
-        </div>
-    </div>
-</div>
-
-
-<!-- Start Hero Section -->
-<div class="feature-section section pt-150 pb-100">
-    <div class="container">
-        <div class="row">
-            <div class="section-title col-xs-12 mb-70">
-                <h1>我的个人介绍</h1>
-            </div>
-            
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-mobile"></i></span>
-                <div class="content fix">
-                    <h4>学校</h4>
-                    <p>中山大学的一名大二学生，修读智能科学与技术专业</p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-profile-male"></i></span>
-                <div class="content fix">
-                    <h4>奖项</h4>
-                    <p>等我完善</p>
-                </div>
-            </div>
-            <!-- <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-beaker"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-puzzle"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-genius"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-envelope"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-search"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-upload"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="single-feature col-md-4 col-sm-6 col-xs-12 mb-50">
-                <span class="icon float-left"><i class="icon-megaphone"></i></span>
-                <div class="content fix">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div> -->
-            
-        </div>
-    </div>
-</div>
-<!-- Hero Section End -->
-
-
-
-<div class="footer-section section pt-65 pb-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1>好好的热爱我的生活</h1>
-                <a class="buy-btn float-right bottom-btn" target="_blank" href="#">回到首页</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Placed JS at the end of the document so the pages load faster -->
-<!-- jQuery latest version -->
-<script src="static/js/jquery-3.1.1.min.js"></script>
-<!-- Bootstrap js -->
-<script src="static/js/bootstrap.min.js"></script>
-<!-- Plugins js -->
-<script src="static/js/plugins.js"></script>
-<!-- Ajax Mail js -->
-<script src="static/js/ajax-mail.js"></script>
-<!-- Main js -->
-<script src="static/js/main.js"></script>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
-
 </html>
