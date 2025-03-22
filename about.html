@@ -1,211 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Manny'sBlog</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Manny'sBlog
-
-https://templatemo.com/tm-553-xtra-blog
-
--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
 </head>
-<body>
-	<header class="tm-header" id="tm-header">
-        <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h1 class="text-center">Manny'sBlog</h1>
-            </div>
-            <nav class="tm-nav" id="tm-nav">            
-                <ul>
-                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Blog Home
-                    </a></li>
-                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
-                        <i class="fas fa-pen"></i>
-                        Single Post
-                    </a></li>
-                    <li class="tm-nav-item active"><a href="about.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        About Xtra
-                    </a></li>
-                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
-                        <i class="far fa-comments"></i>
-                        Contact Us
-                    </a></li>
-                </ul>
-            </nav>
-            <div class="tm-mb-65">
-                <a href="https://facebook.com" class="tm-social-link">
-                    <i class="fab fa-facebook tm-social-icon"></i>
-                </a>
-                <a href="https://twitter.com" class="tm-social-link">
-                    <i class="fab fa-twitter tm-social-icon"></i>
-                </a>
-                <a href="https://instagram.com" class="tm-social-link">
-                    <i class="fab fa-instagram tm-social-icon"></i>
-                </a>
-                <a href="https://linkedin.com" class="tm-social-link">
-                    <i class="fab fa-linkedin tm-social-icon"></i>
-                </a>
-            </div>
-            <p class="tm-mb-80 pr-5 text-white">
-                Manny'sBlog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
-            </p>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <main class="tm-main">
-            <!-- Search form -->
-            <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>                                
-                    </form>
-                </div>                
-            </div>            
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
-                    <img src="img/about-01.jpg" alt="Image" class="img-fluid">
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6 md:p-10 lg:p-12">
+        <header class="text-center mb-8 md:mb-12 lg:mb-16">
+            <img src="https://via.placeholder.com/150" alt="个人照片" class="rounded-full mx-auto mb-4 border-2 border-blue-500">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-700">你的名字</h1>
+            <p class="text-gray-600 text-md md:text-lg lg:text-xl">职称/职位</p>
+        </header>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8 md:mb-10 lg:mb-12">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2">个人信息</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">姓名:</span> 张三</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">出生年月:</span> 1990年1月</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">Email:</span> zhangsan@example.com</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">个人主页:</span> <a href="https://example.com" class="text-blue-600 hover:underline">https://example.com</a></p>
+                </div>
+                <div>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">性别:</span> 男</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">学历:</span> 博士</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">研究方向:</span> 人工智能</p>
+                    <p class="text-gray-700"><span class="font-semibold text-gray-800">工作单位:</span> 某某大学</p>
                 </div>
             </div>
-            <div class="row tm-row tm-mb-40">
-                <div class="col-12">                    
-                    <div class="mb-4">
-                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About Manny</h2>
-                        <p>
-                            You can immediately download 
-                                <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Manny'sBlog Template</a> 
-                                from TemplateMo website for 100% free of charge. Etiam vehicula, tortor ac eleifend tincidunt, diam neque pellentesque ipsum, 
-                                a geugiat eros mauris eget lorem. Quisque in
-                            bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. Aliquam lorem mi, maximus at iaculis ut, viverra vel
-                            mauris. Duis congue luctus metus, sodales tincidunt lectus fringilla ut. Nunc tempus at magna sed vestibulum.
-                        </p>
-                        <p>
-                            我是中山大学的一名学生，修读智能科学与技术专业
-                        </p>                            
-                    </div>                    
-                </div>
+             <div class="mt-6">
+                <p class="text-gray-700"><span class="font-semibold text-gray-800">个人简介:</span>
+                    <span class="ml-2">
+                        这是一个关于你的介绍。你可以写你的研究兴趣、工作经历等等。
+                        你可以写多一点，这里会自适应高度。
+                        这是一个关于你的介绍。你可以写你的研究兴趣、工作经历等等。
+                        你可以写多一点，这里会自适应高度。
+                    </span>
+                </p>
             </div>
-            <div class="row tm-row tm-mb-120">
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                            
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Background</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            SYSU
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Teamwork</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            NOT YET
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>                            
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Our Core Value</h2>
-                        <p class="mb-0 tm-line-height-short">
-                        好好学习，好好生活    
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="row tm-row tm-mb-60">
-                <div class="col-12">
-                    <hr class="tm-hr-primary  tm-mb-55">
-                </div>                
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-02.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">John Henry</h2>
-                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
-                                hendrerit, vestibulum mi id, mattis tortor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-03.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Timy Cake</h2>
-                            <h3 class="tm-h3 mb-3">Project Director</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. 
-                                Aliquam lorem mi, maximus at iaculis ut.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-04.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Jay Zoona</h2>
-                            <h3 class="tm-h3 mb-3">Supervisor</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac
-                                turpis eleifend, commodo purus eget, commodo mauris.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-05.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Catherine Soft</h2>
-                            <h3 class="tm-h3 mb-3">Team Leader</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Integer eu sapien hendrerit,
-                                imperdiet arcu sit amet, sollicitudin ipsum.
-                                Phasellus consequat suscipit ligula eget bibendum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-            <footer class="row tm-row">
-                <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
-                </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2020 Manny'sBlog Company Co. Ltd.
-                </div>
-            </footer>
-        </main>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8 md:mb-10 lg:mb-12">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2">论文发表</h2>
+            <ul class="space-y-3">
+                <li class="bg-gray-50 p-4 rounded-md">
+                    <span class="font-semibold text-blue-600">作者1, 作者2, 作者3.</span>
+                    <span class="text-gray-700"> 论文题目.</span>
+                    <span class="font-italic text-gray-600">期刊/会议名称,</span>
+                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
+                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
+                </li>
+                <li class="bg-gray-50 p-4 rounded-md">
+                    <span class="font-semibold text-blue-600">作者1, 作者2.</span>
+                    <span class="text-gray-700"> 论文题目2.</span>
+                    <span class="font-italic text-gray-600">期刊/会议名称2,</span>
+                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
+                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
+                </li>
+                 <li class="bg-gray-50 p-4 rounded-md">
+                    <span class="font-semibold text-blue-600">作者1, 作者2, 作者3, 作者四.</span>
+                    <span class="text-gray-700"> 论文题目3.</span>
+                    <span class="font-italic text-gray-600">期刊/会议名称3,</span>
+                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
+                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
+                </li>
+            </ul>
+            <div class="mt-4">
+                <p class="text-gray-500 text-sm">（* 以上仅为示例，请根据实际情况修改。）</p>
+            </div>
+        </section>
+
+        <footer class="bg-white rounded-lg shadow-md p-6 text-center">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">联系方式</h2>
+            <p class="text-gray-700">Email: zhangsan@example.com</p>
+            <p class="text-gray-700">电话: +86 1234567890</p>
+            <p class="text-gray-700">地址: 某某大学某某学院</p>
+        </footer>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
 </body>
 </html>
