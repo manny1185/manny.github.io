@@ -4,88 +4,512 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人主页</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
         body {
-            font-family: 'Noto Sans SC', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .tm-header {
+            background-color: #242943; /* Dark background for header */
+        }
+        .tm-header-wrapper {
+            padding-top: 1.25rem; /* py-5 in tailwind */
+            padding-bottom: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tm-site-header {
+            text-align: center;
+            margin-bottom: 2rem; /* mb-8 in tailwind */
+        }
+        .tm-site-logo {
+            width: 80px; /* Example size, adjust as needed */
+            height: 80px;
+            border-radius: 50%;
+            background-color: #f0f0f0; /* Light background for logo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.75rem; /* mb-3 in tailwind */
+        }
+        .tm-site-logo i {
+            color: #242943; /* Dark color for the icon */
+            font-size: 2rem; /* Example size */
+        }
+        .tm-site-header h1 {
+            color: #ffffff;
+            font-size: 2rem; /* text-3xl in tailwind */
+            font-weight: 700; /* font-bold in tailwind */
+        }
+        .tm-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tm-nav-item {
+            margin-bottom: 0.5rem; /* mb-2 in tailwind */
+        }
+        .tm-nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.125rem; /* text-lg in tailwind */
+            padding: 0.5rem 1rem; /* py-2 px-4 in tailwind */
+            display: flex;
+            align-items: center;
+        }
+        .tm-nav-link i {
+            margin-right: 0.75rem; /* mr-3 in tailwind */
+            width: 1.25rem; /* fixed width for icon */
+            text-align: center;
+        }
+        .tm-nav-link:hover, .tm-nav-item.active .tm-nav-link {
+            background-color: #4a5568; /* hover:bg-gray-700 */
+            border-radius: 0.375rem; /* rounded-md */
+        }
+
+        .tm-social-links {
+            margin-top: 2rem; /* mt-8 in tailwind */
+            display: flex;
+            justify-content: center;
+        }
+        .tm-social-link {
+            color: #ffffff;
+            margin-right: 1rem; /* mr-4 in tailwind */
+            font-size: 1.5rem; /* text-2xl */
+        }
+        .tm-social-link:hover {
+            color: #a0aec0; /* hover:text-gray-400 */
+        }
+        .tm-mb-65 {
+            margin-bottom: 4rem;  /* mb-16 */
+        }
+        .tm-mb-80 {
+             margin-bottom: 5rem; /* mb-20 */
+        }
+
+        .container-fluid {
+            padding-left: 1rem; /* pl-4 */
+            padding-right: 1rem; /* pr-4 */
+        }
+
+        .tm-main {
+            padding-top: 2rem; /* pt-8 */
+            padding-bottom: 2rem; /* pb-8 */
+        }
+
+        .tm-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -1rem; /* ml-4 */
+            margin-right: -1rem; /* mr-4 */
+        }
+        .tm-row > div {
+             padding-left: 1rem; /* pl-4 */
+            padding-right: 1rem; /* pr-4 */
+        }
+
+        .tm-search-form {
+            margin-bottom: 5rem; /* mb-20 */
+            display: flex;
+        }
+        .tm-search-input {
+            flex: 1;
+            border-radius: 0.375rem 0 0 0.375rem; /* rounded-l-md */
+            border: 1px solid #e2e8f0; /* border-gray-200 */
+            padding: 0.75rem 1rem; /* py-3 px-4 */
+            font-size: 1rem;  /* text-base */
+        }
+        .tm-search-input:focus {
+            outline: none;
+            border-color: #4a5568; /* focus:border-gray-700 */
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3); /* focus:ring-blue-200 */
+        }
+        .tm-search-button {
+            border-radius: 0 0.375rem 0.375rem 0; /* rounded-r-md */
+            background-color: #4a5568; /* bg-gray-700 */
+            color: #ffffff;
+            padding: 0.75rem 1rem; /* py-3 px-4 */
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            display: flex; /* Ensure icon is centered */
+            align-items: center;
+        }
+
+        .tm-search-icon {
+            width: 1rem;  /* Ensure icon has a width */
+            height: 1rem;
+        }
+
+        .tm-hr-primary {
+            border-top: 1px solid #e2e8f0; /* border-gray-200 */
+            margin-top: 3rem; /* mt-12 */
+            margin-bottom: 3.5rem; /* mb-14 */
+        }
+        .tm-post-title {
+            color: #2d3748; /* text-gray-800 */
+            font-size: 1.875rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .tm-mb-40{
+            margin-bottom: 2.5rem; /* mb-10 */
+        }
+
+        .tm-mb-45 {
+            margin-bottom: 2.75rem; /* mb-11 */
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.375rem; /* rounded-md */
+        }
+
+        .tm-about-col {
+            margin-bottom: 2rem; /* mb-8 */
+        }
+        .tm-bg-gray {
+            background-color: #f7fafc; /* bg-gray-100 */
+            padding: 2rem; /* p-8 */
+            border-radius: 0.375rem; /* rounded-md */
+        }
+        .tm-about-pad {
+             padding-left: 2rem; /* pl-8 */
+            padding-right: 2rem; /* pr-8 */
+        }
+
+        .tm-mt-40 {
+            margin-top: 2.5rem; /* mt-10 */
+        }
+        .tm-mb-60 {
+            margin-bottom: 3.75rem; /* mb-15 */
+        }
+
+        .tm-line-height-short {
+            line-height: 1.7; /* approx 170% */
+        }
+
+        .tm-color-primary {
+            color: #4a5568; /* text-gray-700 */
+        }
+
+        .tm-h3{
+            font-size: 1.175rem; /* Not defined in tailwind, approximated */
+            font-weight: 600;
+        }
+
+        .tm-person {
+            display: flex;
+            align-items: flex-start;
+        }
+        .tm-person img {
+            width: 100px; /* Example size */
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 1.5rem; /* mr-6 */
+        }
+        .tm-person .media-body {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: 2rem; /* mt-8 */
+            padding-top: 1.5rem; /* pt-6 */
+            padding-bottom: 1.5rem; /* pb-6 */
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* space-between */
+            align-items: center;
+            border-top: 1px solid #e2e8f0; /* border-gray-200 */
+        }
+
+        footer div{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tm-color-gray {
+            color: #718096; /* text-gray-600 */
+            font-size: 0.875rem; /* text-sm */
+        }
+        .tm-external-link {
+            color: #4a5568; /* text-gray-700 */
+            text-decoration: underline;
+        }
+        .tm-external-link:hover {
+            color: #2d3748; /* hover:text-gray-800 */
+        }
+
+        /* Mobile menu styles */
+        .navbar-toggler {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            display: none; /* Hidden by default, shown on small screens */
+        }
+        .navbar-toggler i {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        #tm-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) { /* md breakpoint in tailwind is 768px */
+            .tm-header-wrapper {
+                flex-direction: row; /* Change to row on small screens */
+                justify-content: space-between; /* Space between logo and menu button */
+                align-items: center; /* Vertically center logo and button */
+            }
+            .tm-site-header {
+                margin-bottom: 0; /* Remove bottom margin on small screens */
+                margin-right: 1rem;
+            }
+            .navbar-toggler {
+                display: block; /* Show menu button on small screens */
+            }
+            #tm-nav {
+                display: none; /* Hide nav menu by default on small screens */
+                position: fixed; /* Position menu */
+                top: 100px; /* Adjust as needed */
+                left: 0;
+                right: 0;
+                background-color: #2d3748;
+                padding: 1rem;
+                z-index: 10;
+                border-bottom: 1px solid #4a5568;
+            }
+            #tm-nav.show {
+                display: flex; /* Show menu when toggler is clicked */
+            }
+            .tm-nav ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .tm-nav-item {
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+            .tm-nav-link {
+                padding: 0.75rem 1.5rem;
+                display: block;
+                text-align: center;
+            }
+            .tm-social-links {
+                margin-top: 1rem;
+            }
+            footer {
+                flex-direction: column;
+            }
+            footer div {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body class="bg-gray-100">
-    <div class="container mx-auto p-6 md:p-10 lg:p-12">
-        <header class="text-center mb-8 md:mb-12 lg:mb-16">
-            <img src="https://via.placeholder.com/150" alt="个人照片" class="rounded-full mx-auto mb-4 border-2 border-blue-500">
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-700">你的名字</h1>
-            <p class="text-gray-600 text-md md:text-lg lg:text-xl">职称/职位</p>
-        </header>
-
-        <section class="bg-white rounded-lg shadow-md p-6 mb-8 md:mb-10 lg:mb-12">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2">个人信息</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                <div>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">姓名:</span> 张三</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">出生年月:</span> 1990年1月</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">Email:</span> zhangsan@example.com</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">个人主页:</span> <a href="https://example.com" class="text-blue-600 hover:underline">https://example.com</a></p>
+    <header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>
+                <h1 class="text-center">Manny's Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Xtra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65 tm-social-links">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Manny'sBlog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
-                <div>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">性别:</span> 男</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">学历:</span> 博士</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">研究方向:</span> 人工智能</p>
-                    <p class="text-gray-700"><span class="font-semibold text-gray-800">工作单位:</span> 某某大学</p>
+            </div>
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <img src="https://via.placeholder.com/800x400" alt="个人照片" class="img-fluid">
                 </div>
             </div>
-             <div class="mt-6">
-                <p class="text-gray-700"><span class="font-semibold text-gray-800">个人简介:</span>
-                    <span class="ml-2">
-                        这是一个关于你的介绍。你可以写你的研究兴趣、工作经历等等。
-                        你可以写多一点，这里会自适应高度。
-                        这是一个关于你的介绍。你可以写你的研究兴趣、工作经历等等。
-                        你可以写多一点，这里会自适应高度。
-                    </span>
-                </p>
+            <div class="row tm-row tm-mb-40">
+                <div class="col-12">
+                    <div class="mb-4">
+                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About Me</h2>
+                        <p>
+                            这是一个关于你的介绍。你可以写你的研究兴趣、工作经历等等。
+                        </p>
+                        <p>
+                            我是XXX大学的一名学生，修读XXX专业
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class="bg-white rounded-lg shadow-md p-6 mb-8 md:mb-10 lg:mb-12">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2">论文发表</h2>
-            <ul class="space-y-3">
-                <li class="bg-gray-50 p-4 rounded-md">
-                    <span class="font-semibold text-blue-600">作者1, 作者2, 作者3.</span>
-                    <span class="text-gray-700"> 论文题目.</span>
-                    <span class="font-italic text-gray-600">期刊/会议名称,</span>
-                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
-                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
-                </li>
-                <li class="bg-gray-50 p-4 rounded-md">
-                    <span class="font-semibold text-blue-600">作者1, 作者2.</span>
-                    <span class="text-gray-700"> 论文题目2.</span>
-                    <span class="font-italic text-gray-600">期刊/会议名称2,</span>
-                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
-                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
-                </li>
-                 <li class="bg-gray-50 p-4 rounded-md">
-                    <span class="font-semibold text-blue-600">作者1, 作者2, 作者3, 作者四.</span>
-                    <span class="text-gray-700"> 论文题目3.</span>
-                    <span class="font-italic text-gray-600">期刊/会议名称3,</span>
-                    <span class="text-gray-700">年份, 卷号(期号), 页码.</span>
-                    <a href="#" class="text-green-600 hover:underline ml-2">PDF</a>
-                </li>
-            </ul>
-            <div class="mt-4">
-                <p class="text-gray-500 text-sm">（* 以上仅为示例，请根据实际情况修改。）</p>
+            <div class="row tm-row tm-mb-120">
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-graduation-cap fa-4x tm-color-primary"></i>
+                        </div>
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Education</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            中山大学
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-laptop-code fa-4x tm-color-primary"></i>
+                        </div>
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Skills</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            Python, Java, C++
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-heart fa-4x tm-color-primary"></i>
+                        </div>
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Interests</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            Reading, Coding, 旅行
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <footer class="bg-white rounded-lg shadow-md p-6 text-center">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">联系方式</h2>
-            <p class="text-gray-700">Email: zhangsan@example.com</p>
-            <p class="text-gray-700">电话: +86 1234567890</p>
-            <p class="text-gray-700">地址: 某某大学某某学院</p>
-        </footer>
+            <div class="row tm-row tm-mb-60">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="https://via.placeholder.com/100" alt="Person 1" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">John Henry</h2>
+                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
+                                hendrerit, vestibulum mi id, mattis tortor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="https://via.placeholder.com/100" alt="Person 2" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Timy Cake</h2>
+                            <h3 class="tm-h3 mb-3">Project Director</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                 Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue.
+                                 Aliquam lorem mi, maximus at iaculis ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="https://via.placeholder.com/100" alt="Person 3" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Jay Zoona</h2>
+                            <h3 class="tm-h3 mb-3">Supervisor</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                 Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac
+                                 turpis eleifend, commodo purus eget, commodo mauris.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="https://via.placeholder.com/100" alt="Person 4" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Catherine Soft</h2>
+                            <h3 class="tm-h3 mb-3">Team Leader</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                 Integer eu sapien hendrerit,
+                                 imperdiet arcu sit amet, sollicitudin ipsum.
+                                 Phasellus consequat suscipit ligula eget bibendum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2024 Manny's Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('.navbar-toggler').on('click', function() {
+                $('#tm-nav').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>
