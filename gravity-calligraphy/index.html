@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1b171f">
+    <meta name="description" content="Gravity Calligraphy is a mobile touch canvas game.">
+    <title>Gravity Calligraphy</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Gravity Calligraphy">
+      <canvas id="game-canvas" tabindex="0"></canvas>
+      <header class="top-hud" aria-label="Round status">
+        <div class="brand-block">
+          <a href="../" aria-label="Back to game hub">Hub</a>
+          <h1>Gravity Calligraphy</h1>
+        </div>
+        <div class="hud-strip">
+          <div class="hud-stat"><span>Nodes</span><strong id="primary">0/6</strong></div>
+          <div class="hud-stat"><span>Ink</span><strong id="secondary">100</strong></div>
+          <div class="hud-stat"><span>Time</span><strong id="time">60</strong></div>
+          <div class="hud-stat"><span>Best</span><strong id="best">0</strong></div>
+        </div>
+      </header>
+      <nav class="command-bar" aria-label="Game commands">
+        <button id="start-button" class="command primary" type="button">Start</button>
+        <button id="reset-button" class="command" type="button">Reset</button>
+      </nav>
+      <div id="center-message" class="center-message" role="status" aria-live="polite">
+        <div><p id="message-title">Gravity Calligraphy</p><strong id="message-score">0</strong></div>
+      </div>
+    </main>
+    <script src="./src/game.js"></script>
+  </body>
+</html>
