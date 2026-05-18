@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c1721">
+    <meta
+      name="description"
+      content="Sky Ring Pilot is a browser-based 3D fixed-wing flight simulation game for GitHub Pages."
+    >
+    <title>Sky Ring Pilot</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Sky Ring Pilot flight simulator">
+      <canvas id="flight-canvas" tabindex="0"></canvas>
+
+      <header class="top-hud" aria-label="Flight status">
+        <div class="brand-block">
+          <h1>Sky Ring Pilot</h1>
+          <span id="status-pill" class="status-pill">Ready</span>
+        </div>
+
+        <div class="hud-strip">
+          <div class="hud-stat">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="hud-stat">
+            <span>Time</span>
+            <strong id="time">0.0 s</strong>
+          </div>
+          <div class="hud-stat">
+            <span>Target</span>
+            <strong id="target">1/5</strong>
+          </div>
+          <div class="hud-stat">
+            <span>Best</span>
+            <strong id="best-score">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <aside class="telemetry" aria-label="Telemetry">
+        <div class="telemetry-row">
+          <span>Speed</span>
+          <strong id="speed">48 m/s</strong>
+        </div>
+        <div class="telemetry-row">
+          <span>Altitude</span>
+          <strong id="altitude">115 m</strong>
+        </div>
+        <div class="telemetry-row">
+          <span>Throttle</span>
+          <strong id="throttle">58%</strong>
+        </div>
+        <div class="meter" aria-hidden="true">
+          <span id="throttle-meter"></span>
+        </div>
+        <div class="telemetry-row">
+          <span>Range</span>
+          <strong id="range">0 m</strong>
+        </div>
+        <div class="telemetry-row">
+          <span>Input</span>
+          <strong id="input-state">neutral</strong>
+        </div>
+      </aside>
+
+      <nav class="command-bar" aria-label="Game commands">
+        <button id="start-button" class="command primary" type="button">Start</button>
+        <button id="pause-button" class="command" type="button" disabled>Pause</button>
+        <button id="reset-button" class="command" type="button">Reset</button>
+      </nav>
+
+      <section class="touch-controls" aria-label="Flight controls">
+        <div class="control-cluster">
+          <button class="touch-key" data-control="rollLeft" type="button" title="Bank left" aria-label="Bank left">↶</button>
+          <button class="touch-key" data-control="pitchUp" type="button" title="Pitch up" aria-label="Pitch up">↑</button>
+          <button class="touch-key" data-control="rollRight" type="button" title="Bank right" aria-label="Bank right">↷</button>
+          <button class="touch-key" data-control="pitchDown" type="button" title="Pitch down" aria-label="Pitch down">↓</button>
+        </div>
+        <div class="control-cluster throttle-cluster">
+          <button class="touch-key" data-control="throttleUp" type="button" title="Increase throttle" aria-label="Increase throttle">+</button>
+          <button class="touch-key" data-control="throttleDown" type="button" title="Decrease throttle" aria-label="Decrease throttle">−</button>
+        </div>
+      </section>
+
+      <div id="center-message" class="center-message" role="status" aria-live="polite">
+        <div>
+          <p id="message-title">Sky Ring Pilot</p>
+          <span id="message-detail">Fly the course and clear every ring.</span>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>
