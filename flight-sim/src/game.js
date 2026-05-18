@@ -580,11 +580,9 @@ function stepGame() {
 function showTerminalMessage(status) {
   const messages = {
     Complete: ["Mission Complete", "All rings cleared."],
-    Crashed: ["Crashed", "Reset and line up for another run."],
-    Stalled: ["Stalled", "Add throttle and keep the nose from climbing too long."],
-    "Out of bounds": ["Out of Bounds", "Stay inside the course boundary."]
+    Reset: ["Run Reset", "Line up and fly again."]
   };
-  const [title, detail] = messages[status] || [status, "Mission ended."];
+  const [title, detail] = messages[status] || ["Run Reset", "Line up and fly again."];
   refs.messageTitle.textContent = title;
   refs.messageDetail.textContent = detail;
   refs.centerMessage.classList.remove("is-hidden");
@@ -650,13 +648,13 @@ function evaluateGameStatus(state, config, targetIndex) {
     pos[2] > config.boundary[5];
 
   if (pos[2] <= config.groundZ + 2) {
-    return "Crashed";
+    return "Reset";
   }
   if (state.speed < config.stallSpeed) {
-    return "Stalled";
+    return "Reset";
   }
   if (outside) {
-    return "Out of bounds";
+    return "Reset";
   }
   return "Flying";
 }
@@ -742,7 +740,7 @@ function updateHud() {
 
   refs.status.textContent = game.status;
   refs.status.classList.toggle("status-good", game.status === "Complete" || game.status === "Flying");
-  refs.status.classList.toggle("status-bad", ["Crashed", "Stalled", "Out of bounds"].includes(game.status));
+  refs.status.classList.toggle("status-note", game.status === "Reset");
   refs.score.textContent = String(Math.round(game.score));
   refs.time.textContent = `${game.elapsed.toFixed(1)} s`;
   refs.target.textContent = `${targetDisplay}/${total}`;
@@ -844,7 +842,7 @@ function neutralControl() {
 }
 
 function isTerminalStatus(status) {
-  return ["Complete", "Crashed", "Stalled", "Out of bounds"].includes(status);
+  return ["Complete", "Reset"].includes(status);
 }
 
 function distance3(a, b) {

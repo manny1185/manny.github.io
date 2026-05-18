@@ -8,7 +8,7 @@
   --accent: #f3c64f;
   --good: #57d86f;
   --warn: #ff8a4a;
-  --bad: #ef5b5b;
+  --note: #62c9f5;
   --cyan: #54d3f4;
   --shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -117,10 +117,10 @@ h1 {
   background: var(--good);
 }
 
-.status-pill.status-bad {
-  border-color: rgba(239, 91, 91, 0.58);
-  background: var(--bad);
-  color: #fff8f8;
+.status-pill.status-note {
+  border-color: rgba(98, 201, 245, 0.58);
+  background: var(--note);
+  color: #0d1b20;
 }
 
 .hud-strip {
